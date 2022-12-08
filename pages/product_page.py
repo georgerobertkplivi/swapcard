@@ -18,7 +18,8 @@ class ProductPage(ResultsPage):
         self.is_element_present(self.buy_button_selector)
 
     def get_product_price(self):
-        return float(self.get_text(self.price_selector))
+        price = self.get_text(self.price_selector)
+        return float(price.replace(",", ""))
 
     def get_star_rating(self):
         self.scroll_to(self.customer_review_selector)
