@@ -9,7 +9,12 @@
 To run a test use the command
 _**pytest -k test_name_**
 
-To generate Reports pass in the _--dashboard_ flag
+To Run the Complete AllThe Tests in a test file
+ _**pytest -k amazon_test.py**_
+
+Pass in the flags _**--headed**_ or _**--headless**_ to run the test in _headed_ or _headless_ modes respectively
+
+To generate Reports pass in the _--dashboard_ or --html=report.html flags
 example pytest -k test_name --dashboard
 
 To Run the test in headless mode pass in --headless flag

@@ -26,5 +26,9 @@ class ProductPage(ResultsPage):
         if self.is_element_present(self.star_rating_text_selector):
             rating = self.get_text(self.star_rating_text_selector)
             rating_number = re.findall(r"[-+]?\d*\.\d+|\d+", rating)
-            return float(rating_number[0])
+            rating_score = float(0 if rating_number[0] is None else rating_number[0])
+            return rating_score
+
+        else:
+            return 0
 

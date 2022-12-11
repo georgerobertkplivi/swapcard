@@ -25,5 +25,7 @@ class ResultsPage(HomePage):
         self.click_web_element(self.engraving_machine_selector)
 
     def open_product(self, item_position):
-        self.click_web_element("[cel_widget_id='MAIN-SEARCH_RESULTS-" + str(item_position) + "'] .a-size-mini > .a-link-normal")
+        product_selector = "[cel_widget_id='MAIN-SEARCH_RESULTS-" + str(item_position) + "'] .a-size-mini > .a-link-normal"
+        self.scroll_to(product_selector)
+        self.click_web_element(product_selector)
         self.assertTrue(self.is_element_present(".ssf-share-trigger"))
