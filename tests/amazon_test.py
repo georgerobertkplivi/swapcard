@@ -13,7 +13,7 @@ class AmazonTest(BaseTest, ProductPage):
         self.select_sort_by_type(SortBy.HIGH_TO_LOW.value)
         self.open_product(3)
         self.wait_for_product_page_to_load()
-        self.assertTrue(self.get_star_rating() >= 4)
+        self.assertTrue(self.get_star_rating() >= 4, "Product Rating is less than 4")
 
     ##  Check the price for the opened item. If it's more than $4000, fail the test, otherwise pass it.
     def test_product_price_less_than_4000(self):
