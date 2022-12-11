@@ -9,7 +9,7 @@
 To run a test use the command
 _**pytest -k test_name_**
 
-To Run the Complete AllThe Tests in a test file
+To Run the All The Tests in a test file
  _**pytest -k amazon_test.py**_
 
 Pass in the flags _**--headed**_ or _**--headless**_ to run the test in _headed_ or _headless_ modes respectively
