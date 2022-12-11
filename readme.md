@@ -12,13 +12,12 @@ _**pytest -k test_name_**
 To Run the All The Tests in a test file
  _**pytest -k amazon_test.py**_
 
-Pass in the flags _**--headed**_ or _**--headless**_ to run the test in _headed_ or _headless_ modes respectively
-
 To generate Reports pass in the _--dashboard_ or --html=report.html flags
 example pytest -k test_name --dashboard
 
 To Run the test in headless mode pass in --headless flag
 example _pytest -k test_name --headless_
 
+Pass in the flags _**--headed**_ or _**--headless**_ to run the test in _headed_ or _headless_ modes respectively
 To Run the test in headed mode pass in --headed flag
 example _pytest -k test_name --headed_
